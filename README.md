@@ -13,3 +13,4 @@ FROM
 GROUP BY zip, date
 ORDER BY max_temp DESC
 ```
+Ideally this would skinny down the list some. But because we're showing date, there's not many repeated values for the grouping to remove is my guess. So ordering by max_temp is the simpler way to see the max temp. 
