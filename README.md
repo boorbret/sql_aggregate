@@ -25,3 +25,21 @@ FROM
     trips
 GROUP BY 1
 ```
+3. What's the shortest trip that happened?
+
+```
+SELECT
+    MIN(duration) AS shortest_trip
+FROM
+    trips
+```
+4. What is the average trip duration by end station? 
+
+```
+SELECT
+    end_station,
+    AVG(duration) as average_duration
+FROM
+    trips
+GROUP BY 1
+```
